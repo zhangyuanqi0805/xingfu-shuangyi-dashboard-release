@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "release_id": "V1_6_1_0f90384a2be1",
+  "scanned_files": [
+    "index.html"
+  ],
+  "findings": 0
+}
