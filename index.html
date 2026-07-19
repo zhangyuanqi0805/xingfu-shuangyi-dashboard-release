@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>训练营经营看板 | V1.6.1 真数据候选</title>
+  <title>训练营经营看板  | V1_6_1_0f90384a2be1</title>
   <style>
 :root {
   --ink: #16201d;
@@ -2930,7 +2930,52 @@ body,
   }
 }
 
-  </style>
+  
+.public-data-snapshot {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) repeat(3, minmax(132px, auto));
+  gap: 10px;
+  align-items: stretch;
+  margin: 0 0 18px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.94);
+  border-radius: var(--radius, 8px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 244, 255, 0.72));
+  box-shadow: var(--aurora-shadow, var(--shadow));
+  backdrop-filter: blur(18px);
+}
+
+.public-data-snapshot__heading,
+.public-data-snapshot__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 8px 10px;
+}
+
+.public-data-snapshot__heading strong,
+.public-data-snapshot__item strong {
+  color: var(--ink);
+  font-family: var(--font-number);
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.public-data-snapshot__heading span,
+.public-data-snapshot__item span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .public-data-snapshot {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+</style>
 </head>
 <body>
   <div id="app" aria-live="polite"></div>
@@ -6211,7 +6256,7 @@ body,
           (route.module === item.id ? 'active' : '') + '" aria-label="' + h(item.label) + '" title="' + h(item.label) + '">' +
           '<span class="nav-icon">' + h(item.icon) + '</span><span class="nav-label">' + copy(item.label) + '</span></a>';
       }).join('') + '</nav><div class="side-card"><strong>' + h(route.period) +
-      '期</strong>页面版本 V1.5.6<br>' + copy(dayInfo(route.day).label + ' · ' + themeFor(route.day).stage) + '</div></aside>';
+      '期</strong>页面版本 V1_6_1_0f90384a2be1<br>' + copy(dayInfo(route.day).label + ' · ' + themeFor(route.day).stage) + '</div></aside>';
   }
 
   function renderContextSidebar(route) {
@@ -6253,10 +6298,10 @@ body,
     return '<div class="' + shellClass + '">' + renderGlobalSidebar(route) + renderContextSidebar(route) +
       '<main class="workspace"><div class="workspace-inner"><header class="workspace-header"><div><div class="breadcrumbs">' +
       copy(contextLabel(route) + ' / ' + moduleInfo(route.module).label) + '</div><h1>' + copy(routeTitle(route)) +
-      '</h1><p class="workspace-subtitle">' + copy(themeFor(route.day).title + ' · V1.5.6 01B Pro全页版') + fixtureBadge + '</p></div>' +
+      '</h1><p class="workspace-subtitle">' + copy(themeFor(route.day).title + ' · V1_6_1_0f90384a2be1 01B Pro全页版') + fixtureBadge + '</p></div>' +
       '<div class="header-actions"><span class="date-chip">' + copy(dateRange) +
       '</span><button class="button primary" type="button" data-print>打印 / 另存 PDF</button></div></header>' +
-      renderTimeline(route) + renderWorkspace(route) + '</div></main></div>';
+      "<section class=\"public-data-snapshot\" aria-label=\"当前数据快照\"><div class=\"public-data-snapshot__heading\"><span>公网可见层</span><strong>当前数据快照</strong></div><div class=\"public-data-snapshot__item\"><span>发布版本</span><strong>V1_6_1_0f90384a2be1</strong></div><div class=\"public-data-snapshot__item\"><span>602期目标 LTV</span><strong>250</strong></div><div class=\"public-data-snapshot__item\"><span>D10主课人数</span><strong>364</strong></div></section>" + renderTimeline(route) + renderWorkspace(route) + '</div></main></div>';
   }
 
   function bindInteractions(route) {
