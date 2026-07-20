@@ -1,6 +1,1 @@
-{
-  "schema_version": 1,
-  "release_id": "V1_6_1_0f90384a2be1",
-  "entry_sha256": "159a1bb46baeda16fd793dc0f488eeed80c757650335162dae2f8eeba8629041",
-  "prepared_at": "2026-07-19T12:01:01.731692+00:00"
-}
+{"allowlisted_files":["index.html","release.json","README.md","pii-scan.json"],"entry_sha256":"6976a3a486f2a0a8e2a73770dda88c8dbcbf72437d3f54040b21714f3b2e2f1e","release_id":"V1_6_1_PRJ004_G6_THREE_CORRECTIONS_V1","schema_version":1,"tenant_id":"xingfu-shuangyi"}

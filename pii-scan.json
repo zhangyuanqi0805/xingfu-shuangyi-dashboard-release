@@ -1,9 +1,1 @@
-{
-  "schema_version": 1,
-  "status": "PASS",
-  "release_id": "V1_6_1_0f90384a2be1",
-  "scanned_files": [
-    "index.html"
-  ],
-  "findings": 0
-}
+{"forbidden_patterns_remaining":false,"redactions":[],"release_id":"V1_6_1_PRJ004_G6_THREE_CORRECTIONS_V1","schema_version":1,"status":"pass"}
