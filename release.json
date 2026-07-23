@@ -1,1 +1,1 @@
-{"allowlisted_files":["index.html","release.json","README.md","pii-scan.json"],"entry_sha256":"a0d40f0d3a7048879b67953815760f2104d8cbde442624d72ff0f36384603dd5","release_id":"V1_6_3_PRJ004_F16_602_FRIEND_COUNT_V2","schema_version":1,"tenant_id":"xingfu-shuangyi"}
+{"allowlisted_files":["index.html","release.json","README.md","pii-scan.json"],"entry_sha256":"ed8d69324c4c55d772c13a242dd8a22fd5bcf6d2a2c36d06dd42446a29f26882","release_id":"V1_6_4_PRJ004_F16_601_FUNNEL_PROJECTION_FIX_V1","schema_version":1,"tenant_id":"xingfu-shuangyi"}

@@ -1,3 +1,3 @@
 # 幸福双翼数据活看板
 
-当前租户发布版本：`V1_6_3_PRJ004_F16_602_FRIEND_COUNT_V2`。
+当前租户发布版本：`V1_6_4_PRJ004_F16_601_FUNNEL_PROJECTION_FIX_V1`。
