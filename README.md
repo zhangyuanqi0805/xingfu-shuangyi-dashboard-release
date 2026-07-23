@@ -1,3 +1,3 @@
 # 幸福双翼数据活看板
 
-当前租户发布版本：`V1_6_2_PRJ004_F08_TENANT_SIMULATOR_LTV_V1`。
+当前租户发布版本：`V1_6_3_PRJ004_F16_602_FRIEND_COUNT_V2`。
